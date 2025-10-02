@@ -26,6 +26,12 @@ const data = function(req, res){
             "category": 'Primer',
             "shadeColour": 'N/A',
             "rating": 5
+        },{
+            "productName": 'Dew Blush',
+            "brand": 'Saie',
+            "category": 'Blush',
+            "shadeColour": 'Sweetie',
+            "rating": 5
         }]
     });
 };

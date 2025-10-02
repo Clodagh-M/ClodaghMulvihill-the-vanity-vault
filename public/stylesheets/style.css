@@ -40,6 +40,10 @@ h1 small {
   margin-bottom: 1rem;
 }
 
+.container {
+   width: 90vw;
+}
+
 .review-header {
   background-color: #31727a;
   padding-top: 0.5em;
@@ -104,8 +108,8 @@ legend {
 
 .product-name {
    font-weight: 600;
-   font-size: 20px;
-   padding: 10px;
+   font-size: 16px;
+   margin: 15px;
 }
 
 .brand-name {
@@ -116,7 +120,7 @@ legend {
 
 .rating {
    color: #ffc107;
-   margin-top: 10px;
+   font-size: 15px;
    padding: 10px;
    text-align: right;
 }
@@ -150,6 +154,7 @@ legend {
    color: #bd4f98;
    background-color: #ffd5f1;
    padding: 5px;
+   font-size: 13px;
 }
 
 .shade-colour {
