@@ -7,8 +7,16 @@ html
     link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    nav.navbar.fixed-top.navbar-toggleable-md.navbar-inverse.d-flex.justify-content-center
+      a.navbar-brand(href='/' style="color: #bd4f98; width: 100%; font-weight: bold; text-align: center") the vanity vault
+    .container
+      block content
+      footer
+        .row
+          .col-12
+            small &copy; Clodagh Mulvihill | 2025
     script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js')
     script(src='/javascripts/bootstrap.min.js')
+
 
