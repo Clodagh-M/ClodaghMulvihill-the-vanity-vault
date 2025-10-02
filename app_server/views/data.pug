@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .container
+    .row
+    each product in products
+      // Product 1
+      .col-md-6.col-lg-6.col-xl-3
+        .product-card
+          .product-top-bar
+            .product-name= product.productName
+            .badge.category= product.category
+          .mid-section
+            .brand-name= product.brand
+            .shade-colour= product.shadeColour
+          .rating
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star-half-alt
+            span.rating-value 4.5
+    

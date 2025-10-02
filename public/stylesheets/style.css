@@ -91,5 +91,76 @@ legend {
    padding: 20px;
    background: white;
    border-radius: 10px;
-   
+}
+
+.product-card {
+   background: white;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+   transition: transform 0.3s ease;
+   margin-bottom: 20px;
+   height: 100%;
+}
+
+.product-name {
+   font-weight: 600;
+   font-size: 20px;
+   padding: 10px;
+}
+
+.brand-name {
+   color: #6c757d;
+   font-size: 15px;
+   padding: 10px;
+}
+
+.rating {
+   color: #ffc107;
+   margin-top: 10px;
+   padding: 10px;
+   text-align: right;
+}
+
+.rating-value {
+   font-weight: 600;
+   color: #495057;
+   margin-left: 5px;
+}
+
+.product-top-bar {
+   background-color: #bd4f98;
+   display: flex;
+   padding: 5px;
+   justify-content: space-between;
+   color: #fff;
+   border-radius: 10px;
+}
+
+.mid-section {
+   display: flex;
+   padding: 5px;
+   justify-content: space-between;
+   border-radius: 10px;
+
+}
+
+.category {
+   height: 100%;
+   margin: 15px;
+   color: #bd4f98;
+   background-color: #ffd5f1;
+   padding: 5px;
+}
+
+.shade-colour {
+   padding: 10px;
+}
+
+.header {
+   text-align: center;
+   margin-bottom: 30px;
+   padding: 10px;
+   background: ;
+   color: white;
+   border-radius: 10px;
 }
