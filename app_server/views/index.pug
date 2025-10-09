@@ -10,9 +10,13 @@ block content
           | Sign in
     form(action='/register' method='POST')
       div(style="margin-bottom: 20px;")
-        label.form-label(for='name')
-          | Full Name
-        input#name.form-control(type='text' name='name' required='required' placeholder='Enter your full name')
+        label.form-label(for='forename')
+          | Forename
+        input#name.form-control(type='text' name='forename' required='required' placeholder='Enter your forename')
+      div(style="margin-bottom: 20px;")
+        label.form-label(for='surname')
+          | Surname
+        input#name.form-control(type='text' name='surname' required='required' placeholder='Enter your surname')
       div(style="margin-bottom: 20px;")
         label.form-label(for='email')
           | Email Address

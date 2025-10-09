@@ -32,6 +32,12 @@ const data = function(req, res){
             "category": 'Blush',
             "shadeColour": 'Sweetie',
             "rating": 5
+        },{
+            "productName": 'Blurring Elixir Foundation',
+            "brand": 'Kylie Cosmetics',
+            "category": 'Skin Tint',
+            "shadeColour": '1N',
+            "rating": 3.5
         }]
     });
 };
