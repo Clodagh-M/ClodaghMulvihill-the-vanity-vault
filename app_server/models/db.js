@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
-const dbURI = "mongodb+srv://clodagh-mu:ClodaghMulvihill@cluster0.00wzfxg.mongodb.net/MyProject?retryWrites=true&w=majority";
+const dbURI = "mongodb+srv://clodagh-mu:ClodaghMulvihill@cluster0.87s1ahw.mongodb.net/MyProject?retryWrites=true&w=majority&appName=Cluster0";
 
 try {
    
 mongoose.connect(
     dbURI,
-    { useNewUrlParser: true, useUnifiedTopology: true }).then(
+    {  }).then(
     () => {console.log(" Mongoose is connected")},
 	err=> {console.log(err)}
 	);
