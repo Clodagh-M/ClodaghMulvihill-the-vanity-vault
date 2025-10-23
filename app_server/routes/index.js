@@ -7,6 +7,7 @@ const productsController = require('../controllers/products');
 router.get('/', productsController.register);
 router.get('/login', productsController.login);
 router.get('/data', productsController.data);
+router.get('/about', productsController.about);
 
 // POST routes
 router.post('/register', productsController.doRegister);

@@ -38,6 +38,11 @@ const data = function(req, res){
   );
 };
 
+/* GET 'about' page */
+const about = function(req, res){
+  res.render('about', { title: 'About Us' });
+};
+
 /* GET 'login' page */
 const login = function(req, res){
   res.render('login', { title: 'Login' });
@@ -126,6 +131,7 @@ const doRegister = async function(req, res){
 
 module.exports = {
   data,
+  about,
   login,
   register,
   doLogin,
