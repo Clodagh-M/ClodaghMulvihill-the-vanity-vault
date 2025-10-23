@@ -1,12 +1,16 @@
 const express = require('express');
 const router = express.Router();
 
-const ctrlLocations = require('../controllers/products'); 
+const productsController = require('../controllers/products'); 
 
-/* GET home page. */
-router.get('/', ctrlLocations.register);
-router.get('/login', ctrlLocations.login);
-router.get('/data', ctrlLocations.data);
+// GET routes
+router.get('/', productsController.register);
+router.get('/login', productsController.login);
+router.get('/data', productsController.data);
+
+// POST routes
+router.post('/register', productsController.doRegister);
+router.post('/login', productsController.doLogin);
 
 
 module.exports = router;

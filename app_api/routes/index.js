@@ -1,11 +1,12 @@
 const express = require('express');
 const router = express.Router();
+
 const ctrlProducts = require('../controllers/products');
 
 // products
 router
   .route('/products')
-  .get(ctrlProducts.productsListByAlphabeticalOrder)
+  .get(ctrlProducts.productsReadAll)
   .post(ctrlProducts.productsCreate);
 
 router
@@ -13,5 +14,6 @@ router
   .get(ctrlProducts.productsReadOne)
   .put(ctrlProducts.productsUpdateOne)
   .delete(ctrlProducts.productsDeleteOne);
+
 
 module.exports = router;

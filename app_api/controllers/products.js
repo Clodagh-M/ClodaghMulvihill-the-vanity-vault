@@ -20,23 +20,24 @@ res
 });
 };
 
+const productsReadAll = function (req, res) {
+Product
+.find()
+.then((products) => {
+if (products.length === 0) {
+return res.status(404).json({ message: "No products found" });
+}
+res.status(200).json(products);
+})
+.catch((err) => {
+res.status(500).json({ error: err.message });
+});
+};
 
 const productsListByAlphabeticalOrder = function (req, res) { 
 res
 .status(200)
 .json({"status" : "success"});
-};
-
-const productsReadAll = async function(req, res) {
-  try {
-    const product = await Product.find({});
-    if (!product) {
-      return res.status(404).json({error: "Product not found"});
-    }
-    res.status(200).json(product);
-  } catch (err) {
-    res.status(500).json({error: err.message});
-  }
 };
 
 const productsReadOne = function (req, res) {

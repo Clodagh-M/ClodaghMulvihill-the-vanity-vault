@@ -8,7 +8,11 @@ block content
         | Don't Have An Account? 
         a(href='/' style="color: #bd4f98")
           |Register
-    form(action='/data' method='GET')
+    
+    if error
+      div.alert.alert-danger(role="alert")= error
+    
+    form(action='/login' method='POST')
       div(style="margin-bottom: 20px;")
         label.form-label(for='email')
           | Email Address
@@ -18,7 +22,6 @@ block content
           | Password
         input#password.form-control(type='password' name='password' required='required' placeholder='Enter your password' minlength='6')
       div(class='text-center')
-        button(class='btn btn-primary text-center' style="width: 150px;" type='submit' href='/data')
+        button(class='btn btn-primary text-center' style="width: 150px;" type='submit')
           | Login
     div(class='text-center mt-3')
-      

@@ -14,3 +14,4 @@ mongoose.connect(
   console.log("could not connect");
 }
 require('./products');
+require('./users');

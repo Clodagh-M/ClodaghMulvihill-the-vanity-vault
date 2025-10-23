@@ -4,7 +4,7 @@ block content
   .container
     input#search.form-control(type='search' placeholder='search...' style='margin-bottom: 20px;')
     .row
-    each product in products
+    each product in data
       // Product 1
       .col-md-6.col-lg-4.col-xl-3
         .product-card
@@ -33,4 +33,3 @@ block content
               i.far.fa-star
             
             span.rating-value= rating
-    
