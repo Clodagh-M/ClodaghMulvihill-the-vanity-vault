@@ -1,0 +1,27 @@
+<div class="container">
+    <input class="form-control" id="search" type="search" placeholder="search..." style="margin-bottom: 20px;">
+    <div *ngIf="products && products.length > 0">
+      <div class="row">
+          <!-- Each product gets its own column -->
+          <div class="col-md-6 col-lg-4 col-xl-3" *ngFor="let product of products">
+              <div class="product-card">
+                  <div class="product-top-bar">
+                      <div class="product-name">{{product.productName}}</div>
+                      <div class="badge category">{{product.category}}</div>
+                  </div>
+                  <div class="mid-section">
+                      <div class="brand-name">{{product.brand}}</div>
+                      <div class="shade-colour">{{product.shadeColour}}</div>
+                  </div>
+                  <div class="rating">
+                    <i class="fa" [class.fa-star]="star.filled" [class.fa-star-o]="!star.filled" 
+                       *ngFor="let star of getStars(product.rating)"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div *ngIf="products && products.length === 0">
+    No products found.
+  </div>
+</div>
