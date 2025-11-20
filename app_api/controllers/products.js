@@ -3,21 +3,18 @@ const Product = mongoose.model('Product');
 
 const productsCreate = function(req, res) {
 Product.create({ 
-productName: req.body.productName,
-brand: req.body.brand,
-category: req.body.category, 
-shadeColour: req.body.shadeColour,
-}).then ((err, product) => { 
-if (err) {
-res
-.status(400)
-.json(err);
-} else {
-res
-.status(201)
-.json(product);
-}
-});
+  productName: req.body.productName,
+  brand: req.body.brand,
+  category: req.body.category, 
+  shadeColour: req.body.shadeColour,
+  rating: req.body.rating
+  })
+  .then((product) => {
+    res.status(201).json(product);
+  })
+  .catch((err) => {
+    res.status(400).json(err);
+  });
 };
 
 const productsReadAll = function (req, res) {
