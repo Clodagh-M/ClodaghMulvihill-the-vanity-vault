@@ -1,3 +1,4 @@
+// home-list.ts
 import { Component, OnInit } from '@angular/core';
 import { TheVanityVaultData } from '../the-vanity-vault-data';
 
